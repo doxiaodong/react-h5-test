@@ -1,0 +1,113 @@
+@import "../../assets/customer/variables.less";
+
+.c-orderList {
+    // position: fixed;
+    overflow: hidden;
+    width: 100%;
+    // padding-top: 45px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+
+    &-empty {
+        margin-top: 40px;
+        text-align:center;
+        padding: 20px;
+        color: @color-text-caption;
+        min-height: 400px;
+    }
+
+    &-down-text {
+        width:100%;
+        height: 45px;
+        padding: 25px 0 20px;
+        text-align: center;
+        color: #aaa;
+    }
+}
+
+// @media screen and (max-width: 350px) {
+//     .c-orderList {
+//         padding-top: 145px;
+//     }
+// }
+
+// @media screen and (min-width: 600px) {
+//     .c-orderList {
+//         padding-top: 100px;
+//     }
+// }
+
+// @media screen and (min-width: 700px) {
+//     .c-orderList {
+//         padding-top: 95px;
+//     }
+// }
+
+// @media screen and (min-width: 800px) {
+//     .c-orderList {
+//         padding-top: 90px;
+//     }
+// }
+
+
+
+.c-orderItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 10px;
+    padding: 16px 14px;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: #e5e5e5 0px 0px 10px;
+
+    &:last-child {
+        margin-bottom: 80px;
+    }
+
+    &-success {
+        border-left: 4px solid @brand-success;
+    }
+    &-info {
+        border-left: 4px solid @brand-info;
+    }
+    &-error {
+        border-left: 4px solid @brand-error;
+    }
+    &-warning {
+        border-left: 4px solid @brand-warning;
+    }
+
+    &-title {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 0 1 50%;
+        color: @color-text-base;
+        &-main {
+            font-size: 16px;
+            padding-bottom: 12px;
+            font-weight: 500;
+            word-break: break-word;
+        }
+        &-sub {}
+    }
+
+    &-extra {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+        flex: 0 1 50%;
+        color: @color-text-caption;
+        &-main {
+            padding-bottom: 16px;
+        }
+        &-sub {}
+    }
+
+    &-highLight {
+        color: @brand-primary;
+    }
+    
+}
+

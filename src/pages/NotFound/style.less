@@ -1,0 +1,26 @@
+@import "../../assets/customer/variables.less";
+
+.p-notfound {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    color: @brand-warning;
+    text-align: center;
+    padding-top: 30px;
+    &-icon {
+        font-size: 220px;
+    }
+    h1 {
+        font-size: 65px;
+        display: inline-block;
+        padding-right: 12px;
+        animation: type .5s alternate infinite;
+        text-align: center;
+        width: 100%;
+        font-weight: 400;
+    }
+}

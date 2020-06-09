@@ -1,0 +1,36 @@
+.l-scroll {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &-up {
+    padding-top: 30px;
+  }
+
+  &-down {
+    padding-bottom: 30px;
+  }
+
+
+  &-loading {
+    &-up {
+      position: absolute;
+      left:0; right:0;
+      bottom: 5px;
+      height: 60px;
+      margin: auto;
+      z-index: 100;
+      text-align: center;
+    }
+    &-down {
+      position: absolute;
+      left:0; right:0;
+      top: 0px;
+      height: 30px;
+      margin: auto;
+      z-index: 100;
+      text-align: center;
+    }
+  }
+}
