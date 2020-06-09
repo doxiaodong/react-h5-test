@@ -5,7 +5,7 @@ const { override, fixBabelImports, addLessLoader, addPostcssPlugins } = require(
 // 打包配置
 const addCustomize = () => config => {
   if (process.env.NODE_ENV === 'production') {
-    config.output.publicPath = './react-h5-test';
+    config.output.publicPath = '/react-h5-test/';
   }
   return config;
 };
