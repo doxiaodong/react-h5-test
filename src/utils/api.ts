@@ -1,20 +1,7 @@
 import queryString from 'query-string';
 
-// export function getOdinAPIOrigin() {
-//   return 'http://odin.v5.intra.xiaojukeji.com';
-//   // return 'http://127.0.0.1:8080';
-//   // return 'http://172.24.39.21:8080';
-//   // return process.env.ODIN_ENV === 'odin' && process.env.NODE_ENV === 'production' ? '/' : '/';
-// }
-
 export function getAPIOrigin() {
-  if (process.env.NODE_ENV === 'production') {
-    return 'http://m-odin-server.intra.xiaojukeji.com';
-  }
-  return 'http://odin.test.xiaojukeji.com:8055';
-  // return 'http://m-odin-server.intra.xiaojukeji.com';
-  // return 'http://127.0.0.1:8080';
-  // return 'http://172.24.39.11:8055';
+  return 'http://127.0.0.1:8080';
   // return process.env.ODIN_ENV === 'odin' && process.env.NODE_ENV === 'production' ? '/' : '/';
 }
 
