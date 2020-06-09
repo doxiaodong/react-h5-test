@@ -1,6 +1,6 @@
-# odin-order-client
+# react-h5-test
 
-预览地址：http://m-odin.intra.xiaojukeji.com/
+一个用于演示的React H5 程序
 
 # Features
 
