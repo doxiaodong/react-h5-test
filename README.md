@@ -2,6 +2,8 @@
 
 一个用于演示的React H5 程序
 
+[预览地址](https://jokingzhang.github.io/react-h5-test);
+
 # Features
 
 - 支持 TypeScript
