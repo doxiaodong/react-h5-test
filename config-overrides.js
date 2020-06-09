@@ -1,12 +1,14 @@
 const path = require('path');
-const {
-  override,
-  fixBabelImports,
-  addLessLoader,
-  addPostcssPlugins,
-  setWebpackPublicPath,
-} = require('customize-cra');
+const { override, fixBabelImports, addLessLoader, addPostcssPlugins } = require('customize-cra');
 // const AntDesignThemePlugin = require('@didi/dantd/dist/theme/antd-theme-webpack-plugin');
+
+// 打包配置
+const addCustomize = () => config => {
+  if (process.env.NODE_ENV === 'production') {
+    config.output.publicPath = './react-h5-test';
+  }
+  return config;
+};
 
 module.exports = override(
   fixBabelImports('import', {
@@ -17,7 +19,6 @@ module.exports = override(
   addLessLoader({
     javascriptEnabled: true,
   }),
-  setWebpackPublicPath('/react-h5-test'),
   addPostcssPlugins([
     require('postcss-pxtorem')({
       rootValue: 16,
@@ -26,4 +27,5 @@ module.exports = override(
       // propWhiteList: []
     }),
   ]),
+  addCustomize(),
 );

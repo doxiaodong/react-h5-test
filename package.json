@@ -20,7 +20,7 @@
   },
   "scripts": {
     "start": "PORT=3077 react-app-rewired start",
-    "build": "react-app-rewired build && mv build dist",
+    "build": "rm -rf dist && react-app-rewired build && mv build dist",
     "deploy": "node deploy.js",
     "test": "jest --no-cache --watch"
   },
