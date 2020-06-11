@@ -74,8 +74,9 @@ const TabContent = (props: ITabContentProps) => {
         direction={'down'}
         refreshing={state.loading}
         onRefresh={state.retry}
+        style={wrapperStyle}
       >
-        <OrderList onClick={handleListClick} style={wrapperStyle} dataSource={state.value || []} />
+        <OrderList onClick={handleListClick} dataSource={state.value || []} />
       </PullToRefresh>
     </div>
   );
